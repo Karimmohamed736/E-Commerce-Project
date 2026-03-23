@@ -1,0 +1,15 @@
+1- Verify DB in env
+2- migrate database (skip it for later if you will install package)
+3- install package Jetstream with livewire
+4- install npm
+5- re-run migrate DB because of new package (has new tables)
+6- add role column to user table for admin and user
+7- make controller to view dashboard for admin and other to user
+8- use template sixteen-clothes to user side and get asset folder for public folder in project
+9- change all assets into asset() of blade
+10- divide the Layouts and remove rows
+11- edit in links like login and home route
+12- Make Product -mc for admin and user then migrate
+13- Make seeder if you want
+14- CRUD with Image
+
