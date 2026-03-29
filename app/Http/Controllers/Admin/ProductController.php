@@ -29,7 +29,7 @@ class ProductController extends Controller
             'price'=>'required|numeric',
             'desc'=> 'required|min:10|string',
             'quantity'=>'required|numeric',
-            'image'=>'nullable|image|mimes:png,jpg,jpeg|max:2048'
+            'image'=>'required|image|mimes:png,jpg,jpeg|max:2048'
         ]);
 
         $data['image']= Storage::putFile('products',$request->image);
@@ -70,6 +70,7 @@ class ProductController extends Controller
 
     public function delete($id){
         $prodcut = Product::findOrFail($id);
+        Storage::delete($prodcut->image);
         $prodcut->delete();
 
         return redirect()->route('admin.prodcuts.all')->with('success', 'Deleted');
