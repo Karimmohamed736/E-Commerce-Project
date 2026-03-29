@@ -1,5 +1,7 @@
+{{-- @include('admin.errors')
+@include('admin.success') --}}
 
-@extends('Admin.layouts.app')
+@extends('User.layouts.app')
 @section('content')
 
 @if (session()->has('success'))
@@ -27,14 +29,14 @@
         <td>{{$product->desc}}</td>
         <td><img src="{{asset("storage/$product->image")}}"  width="200px" alt="" srcset=""></td>
         <td>
-            <form action="{{route('admin.products.delete',$product->id)}}" method="post">
+            {{-- <form action="{{route('admin.products.delete',$product->id)}}" method="post">
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger"> Delete </button>
             </form>
             <h1>
                 <a class="btn btn-success" href="{{route('admin.products.editForm', $product->id)}}" >edit</a>
-            </h1>
+            </h1> --}}
         </td>
     </tr>
     @endforeach

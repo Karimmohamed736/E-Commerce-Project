@@ -13,3 +13,9 @@
 13- Make seeder if you want
 14- CRUD with Image
 
+15- Make middleware for admin (is_admin) and make function to be role admin only then verify it in app in bootstrap and call it in routes
+
+//API
+1- Make controller for api and manage all CRUD
+2- Make Resource to manage the response of API in postman
+3- Call URi in postman

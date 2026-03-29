@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ProductResource;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -14,13 +15,29 @@ class ProductController extends Controller
     //All
     public function index(){
         $products = Product::all();
-        return view('Admin.Product.index')->with('products',$products);
+        //collection
+        if ($products) {
+        return new ProductResource($products);
+        }else {
+            return response()->json([
+                "success"=>false,
+                'message'=>'Data Not found'
+            ],'404');
+        }
     }
 
-    public function create(){
-        $products = Product::all();
-        return view('Admin.Product.create')->with('products',$products);
+    public function show($id){
+        $product = Product::find($id);
+        if ($product) {
+            return new ProductResource($product);
+        }else {
+            return response()->json([
+                "success"=>false,
+                'message'=>'Data Not found'
+            ],'404');
+        }
     }
+
 
     public function store(Request    $request){
 
@@ -36,14 +53,9 @@ class ProductController extends Controller
 
         Product::create($data);
 
-        return redirect()->route('admin.prodcuts.all')->with('sucess','Created Successfully');
-
     }
 
-    public function editForm($id){
-        $products = Product::findOrFail($id);
-        return view('Admin.Product.editForm')->with('products', $products);
-    }
+
 
     public function update(Request $request, $id){
         $product = Product::findOrFail($id);
@@ -65,7 +77,6 @@ class ProductController extends Controller
 
         $product->update($data);
 
-        return redirect()->route('admin.prodcuts.all')->with('success','Updated Successfully');
     }
 
     public function delete($id){
@@ -73,6 +84,5 @@ class ProductController extends Controller
         Storage::delete($prodcut->image);
         $prodcut->delete();
 
-        return redirect()->route('admin.prodcuts.all')->with('success', 'Deleted');
     }
 }
