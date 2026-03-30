@@ -65,7 +65,7 @@
             </a>
           </li>
             <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ route('admin.prodcuts.all') }}">
+            <a class="nav-link" href="{{ route('admin.products.all') }}">
               <span class="menu-icon">
                 <i class="mdi mdi-contacts"></i>
               </span>

@@ -22,7 +22,7 @@ class ProductController extends Controller
         return view('Admin.Product.create')->with('products',$products);
     }
 
-    public function store(Request    $request){
+    public function store(Request $request){
 
         $data = $request->validate([
             'name'=> 'required|min:4|string',
@@ -36,7 +36,7 @@ class ProductController extends Controller
 
         Product::create($data);
 
-        return redirect()->route('admin.prodcuts.all')->with('sucess','Created Successfully');
+        return redirect()->route('admin.products.all')->with('sucess','Created Successfully');
 
     }
 
@@ -65,7 +65,7 @@ class ProductController extends Controller
 
         $product->update($data);
 
-        return redirect()->route('admin.prodcuts.all')->with('success','Updated Successfully');
+        return redirect()->route('admin.products.all')->with('success','Updated Successfully');
     }
 
     public function delete($id){
@@ -73,6 +73,6 @@ class ProductController extends Controller
         Storage::delete($product->image);
         $product->delete();
 
-        return redirect()->route('admin.prodcuts.all')->with('success', 'Deleted');
+        return redirect()->route('admin.products.all')->with('success', 'Deleted');
     }
 }
