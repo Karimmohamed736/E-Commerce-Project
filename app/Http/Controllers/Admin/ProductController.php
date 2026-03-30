@@ -69,9 +69,9 @@ class ProductController extends Controller
     }
 
     public function delete($id){
-        $prodcut = Product::findOrFail($id);
-        Storage::delete($prodcut->image);
-        $prodcut->delete();
+        $product = Product::findOrFail($id);
+        Storage::delete($product->image);
+        $product->delete();
 
         return redirect()->route('admin.prodcuts.all')->with('success', 'Deleted');
     }
