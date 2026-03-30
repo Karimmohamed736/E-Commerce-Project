@@ -34,6 +34,7 @@ Route::delete('delete/{id}','delete')->name('admin.products.delete');
 });
 
 
+//USer
 Route::controller(UserProductController::class)->group(function(){
     Route::get('all-products', 'index')->name('user.products.all');
 });
