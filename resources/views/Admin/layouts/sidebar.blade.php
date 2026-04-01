@@ -54,14 +54,14 @@
             </div>
           </li>
           <li class="nav-item nav-category">
-            <span class="nav-link">Navigation</span>
+            <span class="nav-link">{{ __("message.Navigation") }}</span>
           </li>
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{ route('home') }}">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
-              <span class="menu-title">Dashboard</span>
+              <span class="menu-title">{{ __("message.Dashboard") }}</span>
             </a>
           </li>
             <li class="nav-item menu-items">
@@ -69,7 +69,7 @@
               <span class="menu-icon">
                 <i class="mdi mdi-contacts"></i>
               </span>
-              <span class="menu-title">Products</span>
+              <span class="menu-title">{{ __("message.Products") }}</span>
             </a>
           </li>
 
