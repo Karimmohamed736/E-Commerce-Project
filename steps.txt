@@ -15,7 +15,29 @@
 
 15- Make middleware for admin (is_admin) and make function to be role admin only then verify it in app in bootstrap and call it in routes
 
+
 //API
 1- Make controller for api and manage all CRUD
 2- Make Resource to manage the response of API in postman
 3- Call URi in postman
+
+
+//Auth (with access Token)
+1- Make controller for Auth that has (Register, Login, Logout) and make routes
+2- make Token in register and login(after delete old one) and delete tokens in logout
+3- In postman after login and send you token, take this token to logout uri and in authentication put it in Bearer token
+
+//Localization
+1- In terminal, Make publish lang to create folder lang
+2- make 2 folders ar and en that have same file message with same words to translate
+3- Make route with function parameter to check on en or ar by session
+4- Make middleware ChangeLang to change locale to ar or en
+5- after verify the middleware, Put it in the route of the page
+6-Go to every word in pages and put them between
+{{(‘message.   ‘)}}
+
+
+//User side
+1- Divide all pages into Layouts
+2- pagination and verify it in AppServerProvidor and loop for Products
+
