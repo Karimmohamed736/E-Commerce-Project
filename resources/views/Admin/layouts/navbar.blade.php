@@ -15,7 +15,7 @@
             </ul>
             <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item dropdown d-none d-lg-block">
-                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" aria-expanded="false" href="{{ route('admin.products.create') }}">+ Create New Project</a>
+                <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" aria-expanded="false" href="{{ route('admin.products.create') }}">+ {{ __("message.Create New Project") }}</a>
                 {{-- <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
                   <h6 class="p-3 mb-0">Projects</h6>
                   <div class="dropdown-divider"></div>
@@ -56,8 +56,14 @@
                 </div> --}}
               </li>
               <li class="nav-item nav-settings d-none d-lg-block">
-                <a class="nav-link" href="#">
-                  <i class="mdi mdi-view-grid"></i>
+                <a class="nav-link" href="{{ url('change/en') }}">
+                {{ __("message.English") }}
+                </a>
+              </li>
+
+                <li class="nav-item nav-settings d-none d-lg-block">
+                <a class="nav-link" href="{{ url('change/ar') }}">
+                {{ __("message.Arabic") }}
                 </a>
               </li>
               <li class="nav-item dropdown border-left">

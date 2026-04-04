@@ -6,7 +6,7 @@
 <form method="POST" action="{{route('admin.products.store')}}" enctype="multipart/form-data">
     @csrf
     @if ($errors->any())
-            @foreach ($errors->all() a                                                                                               s $error)
+            @foreach ($errors->all() as $error)
             <div class="alert alert-danger" style="color:red">{{$error}}</div>
             @endforeach
     @endif

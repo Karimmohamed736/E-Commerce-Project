@@ -23,7 +23,7 @@
         @foreach ($products as $product )
       <tr>
         <th scope="row">{{$loop->iteration}}</th>
-        <td>{{$product->name}}</td>
+        <td><a href="{{ route("user.products.show", "$product->id") }}">{{$product->name}}</a></td>
         <td>{{$product->price}} $</td>
         <td>{{$product->quantity}}</td>
         <td>{{$product->desc}}</td>

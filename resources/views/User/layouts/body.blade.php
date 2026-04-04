@@ -7,13 +7,18 @@
               <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
             </div>
           </div>
+        @forelse ( $products as $product )
+
+
+
+
           <div class="col-md-4">
             <div class="product-item">
-              <a href="#"><img src="{{asset("user/assets")}}/images/product_01.jpg" alt=""></a>
+              <a href="#"><img src=" {{ asset("storage/$product->image") }} " alt=""></a>
               <div class="down-content">
-                <a href="#"><h4>Tittle goes here</h4></a>
-                <h6>$25.75</h6>
-                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <a href="{{ route("user.products.show", "$product->id") }}"><h4>{{$product->name}}</h4></a>
+                <h6>{{$product->price}}</h6>
+                <p>{{$product->desc}}</p>
                 <ul class="stars">
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
@@ -21,11 +26,17 @@
                   <li><i class="fa fa-star"></i></li>
                   <li><i class="fa fa-star"></i></li>
                 </ul>
-                <span>Reviews (24)</span>
+                <span> Quantity({{ $product->quantity }})</span>
               </div>
             </div>
           </div>
+           @empty
+           <div>No Data Founded</div>
+        @endforelse ()
+
+
         </div>
+        {{ $products->links() }}
       </div>
     </div>
 

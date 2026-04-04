@@ -22,7 +22,7 @@ Route::get('dashboard', [HomeController::class, 'Home'])->name('home');
 });
 
 //Crud Admin
-Route::middleware('auth','is_admin')->group(function (){
+Route::middleware('auth','is_admin', 'change_lang')->group(function (){
 Route::controller(ProductController::class)->group(function(){
 Route::get('allProducts','index')->name('admin.products.all');
 Route::get('createProduct','create')->name('admin.products.create');
@@ -42,6 +42,16 @@ Route::controller(UserProductController::class)->group(function(){
 
 Route::controller(UserProductController::class)->group(function(){
     Route::get('all-products', 'index')->name('user.products.all');
+    Route::get('show/{id}','show')->name('user.products.show');
 });
 
+Route::get('change/{id}',function($lang){
+    if ($lang == 'en') {
+        session()->put('lang','en');
+    }else {
+        session()->put('lang', 'ar');
+    }
+
+    return redirect()->back();
+});
 

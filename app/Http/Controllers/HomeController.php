@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
@@ -13,7 +14,8 @@ class HomeController extends Controller
         if ($role== '1') {
             return view('Admin.dashboard');
         }else {
-            return view('User.dashboard');
+            $products = Product::paginate(3);
+            return view('User.dashboard')->with('products',$products);
         }
     }
 }
