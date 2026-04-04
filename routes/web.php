@@ -10,7 +10,7 @@ Route::get('/', function () {
 });
 
 Route::middleware([
-    'auth:sanctum',
+    'auth:sanctum','change_lang',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
@@ -55,14 +55,6 @@ Route::get('change/{id}',function($lang){
     return redirect()->back();
 });
 
-Route::get('change/{id}',function($lang){
-    if ($lang == 'en') {
-        session()->put('lang','en');
-    }else {
-        session()->put('lang', 'ar');
-    }
 
-    return redirect()->back();
-});
 
 
