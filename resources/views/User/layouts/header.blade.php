@@ -35,22 +35,50 @@
                 <a class="nav-link" href=" {{ route('home') }} ">{{ __('user_message.Home') }}
                   <span class="sr-only">(current)</span>
                 </a>
-              </li>
+
+                </li>
+
+                @if (Auth::check())
+                <form method="POST" action="{{ route('logout') }}">
+                        @csrf
                 <li class="nav-item">
+                <button class="nav-link" type="submit"> {{ __('user_message.Logout') }} </button>
+              </li>
+                </form>
+            @endif
+
+            @if (!Auth::check())
+            <form method="POST" action="{{ route('login') }}">
+                        @csrf
+                <li class="nav-item">
+                <button class="nav-link" type="submit"> {{ __('user_message.Login') }} </button>
+              </li>
+              </form>
+            @endif
+            </li>
+
+            <li class="nav-item">
+                <form method="POST" action="{{ route('register') }}">
+                    @csrf
+                    <button class="nav-link" type="submit"> {{ __('user_message.Register') }} </button>
+                </form>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="{{ url('change/en') }}"> {{ __('user_message.English') }} </a>
-              </li>
-                <li class="nav-item">
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{ url('change/ar') }}">{{ __('user_message.Arabic') }}</a>
-              </li>
+            </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('user.products.all') }}">{{ __('user_message.Our Products') }}</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">{{ __('user_message.About Us') }}</a>
+                <a class="nav-link" href="{{ route('user.cart') }}">{{ __('user_message.Cart') }}</a>
               </li>
-              <li class="nav-item">
+              {{-- <li class="nav-item">
                 <a class="nav-link" href="contact.html">{{ __('user_message.Contact Us') }}</a>
-              </li>
+              </li> --}}
             </ul>
           </div>
         </div>

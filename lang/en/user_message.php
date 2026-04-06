@@ -10,4 +10,8 @@ return [
     'view all products'=>'VIEW ALL PRODCUTS',
     'English'=>'English',
     'Arabic'=>'Arabic',
+    'Logout'=>'Logout',
+    'Login'=>'Login',
+    'Register'=>'Register',
+    'Cart'=>'Cart',
 ];

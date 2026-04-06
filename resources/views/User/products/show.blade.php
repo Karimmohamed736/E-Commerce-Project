@@ -22,6 +22,12 @@
               <p>Price: {{ $product->price }}$ </p>
               <p>Quantity ({{ $product->quantity}}) </p>
             </div>
+
+            <form action="{{ route('user.addToCart',$product->id) }}" method="POST">
+                @csrf
+                <input type="number" name="quantity" value="1" min="1" max="{{ $product->quantity }}">
+                <button class="btn btn-primary">Add To Cart</button>
+            </form>
           </div>
           <div class="col-md-6">
             <div class="right-image">

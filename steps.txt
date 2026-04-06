@@ -41,3 +41,6 @@
 1- Divide all pages into Layouts
 2- pagination and verify it in AppServerProvidor and loop for Products
 
+//cart and orders
+
+
