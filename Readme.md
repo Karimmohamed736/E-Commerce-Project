@@ -1,4 +1,5 @@
 📌 E-Commerce System
+
 ![Laravel](https://img.shields.io/badge/Laravel-Framework-red)
 ![PHP](https://img.shields.io/badge/PHP-8.x-blue)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
@@ -10,6 +11,7 @@
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
 🚀 Overview
+
 This project is a full-featured E-Commerce system built using Laravel, designed with scalability, maintainability, and clean architecture principles.
 
 It provides a complete solution for managing products, authentication, shopping cart, wishlist, and order processing through RESTful APIs and a dynamic user interface.
@@ -19,7 +21,8 @@ The system leverages Laravel Jetstream for authentication scaffolding, combined 
 To ensure clean and maintainable code, Form Request classes are used for validation, while API Resources provide structured and consistent API responses.
 
 
-✨ Highlights (Why this project stands out)
+### ✨ Highlights (Why this project stands out)
+
 🔐 Secure Authentication using Jetstream + Sanctum (Token-Based)
 🧱 Clean Architecture with separation of concerns (Controllers, Requests, Resources)
 🔗 RESTful API Design with structured responses using API Resources
@@ -28,7 +31,8 @@ To ensure clean and maintainable code, Form Request classes are used for validat
 🌍 Localization دعم تعدد اللغات
 ♻️ Reusable & Maintainable Code Structure
 
-🧩 Core Modules
+### 🧩 Core Modules
+
 🛍️ Product Management (CRUD)
 🛒 Shopping Cart System
 ❤️ Wishlist Feature
@@ -36,7 +40,8 @@ To ensure clean and maintainable code, Form Request classes are used for validat
 🔐 Authentication & Authorization
 🔗 API Endpoints (Sanctum Protected)
 
-🛠️ Tech Stack
+### 🛠️ Tech Stack
+
 Layer	Technology
 Backend	Laravel (MVC)
 Frontend	Livewire
@@ -54,7 +59,8 @@ API	RESTful
 5. Run project using XAMPP or any local server
 6. Run the project php artisan serve and npm run dev
 
-📬 API (Postman)
+### 📬 API (Postman)
+
 🔐 Auth
 POST /api/auth/register
 POST /api/auth/login
@@ -62,7 +68,7 @@ POST /api/auth/logout
 🔑 Headers
 Authorization: Bearer YOUR_TOKEN
 
-📸 Screenshots
+### 📸 Screenshots
 
 ## 🔐 API (Postman)
 ![API_Register](assets/images/Register.png)
@@ -83,7 +89,7 @@ Authorization: Bearer YOUR_TOKEN
 ![Error2](assets/images/Error2.png)
 
 
-### 👤 User Interface
+### 👤 User Dashboard
 ![User](assets/images/User_Dashboard.png)
 
 
@@ -99,7 +105,8 @@ Authorization: Bearer YOUR_TOKEN
 ### 🌍 Multi-language Support (Localization)
 ![Arabic](assets/images/Arabic_Lang.png)
 
-🧠 What I Learned
+### 🧠 What I Learned
+
 Designing scalable backend systems
 Building secure APIs باستخدام Token Authentication
 Structuring Laravel projects using best practices
@@ -107,10 +114,10 @@ Working with real-world features (Cart, Orders, Wishlist)
 Improving code quality باستخدام Requests & Resources
 
 
-## 👨‍💻 Author
+### 👨‍💻 Author
 
 Karim Mohamed
 
-⭐ Final Note
+### ⭐ Final Note
 
 This project reflects my ability to build real-world Laravel applications with clean, maintainable code and modern development practices.
