@@ -84,7 +84,7 @@ Authorization: Bearer YOUR_TOKEN
 ![Update](assets/images/Update.png)
 
 ### ❌ Error Message
-![ErrorAPI](assets/images/Error_Api.png)
+[ErrorAPI](assets/images/Error_Api.png)
 ![Error1](assets/images/Error1.png)
 ![Error2](assets/images/Error2.png)
 
