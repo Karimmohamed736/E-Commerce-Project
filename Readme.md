@@ -10,6 +10,7 @@
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
 🚀 Overview
+
 This project is a full-featured E-Commerce system built using Laravel, designed with scalability, maintainability, and clean architecture principles.
 
 It provides a complete solution for managing products, authentication, shopping cart, wishlist, and order processing through RESTful APIs and a dynamic user interface.
