@@ -18,10 +18,10 @@
 ✅ Validation باستخدام Form Requests
 🔗 RESTful API
 
-🛠️ Tech Stack Backend: 
-- Laravel (MVC Architecture) Frontend: Livewire 
-- Authentication: Jetstream & Sanctum 
-- Database: MySQL 
+🛠️ Tech Stack Backend:
+- Laravel (MVC Architecture) Frontend: Livewire
+- Authentication: Jetstream & Sanctum
+- Database: MySQL
 - API: RESTful APIs
 
 💡 Project Goal
