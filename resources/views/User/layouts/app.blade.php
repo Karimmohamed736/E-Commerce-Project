@@ -13,7 +13,6 @@
 @yield('content')
 
 
-@include('User.layouts.card')
 
 
 @include('User.layouts.footer')

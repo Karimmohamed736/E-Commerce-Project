@@ -76,9 +76,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('user.cart') }}">{{ __('user_message.Cart') }}</a>
               </li>
-              {{-- <li class="nav-item">
-                <a class="nav-link" href="contact.html">{{ __('user_message.Contact Us') }}</a>
-              </li> --}}
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('user.orders.all') }}">{{ __('user_message.Orders') }}</a>
+              </li>
             </ul>
           </div>
         </div>

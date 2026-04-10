@@ -63,6 +63,9 @@ Route::middleware('auth','change_lang')->group(function () {
 
 Route::middleware('auth', 'change_lang')->group(function(){
     Route::controller(OrderController::class)->group(function(){
+        Route::get('orders','index')->name('user.orders.all');
+        Route::get('orders/{id}','show')->name('user.orders.show');
+        Route::delete('orders/{id}','delete')->name('user.orders.delete');
         Route::post('make-order', 'makeOrder')->name('user.makeOrder');
     });
 });

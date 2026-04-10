@@ -20,7 +20,7 @@
             <div class="left-content">
               <p>{{ $product->desc }} </p>
               <p>Price: {{ $product->price }}$ </p>
-              <p>Quantity ({{ $product->quantity}}) </p>
+                <p>Quantity: {{ $product->quantity }} </p>
             </div>
 
             <form action="{{ route('user.addToCart',$product->id) }}" method="POST">

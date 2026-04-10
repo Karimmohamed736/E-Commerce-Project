@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{asset("user/assets")}}/css/fontawesome.css">
     <link rel="stylesheet" href="{{asset("user/assets")}}/css/templatemo-sixteen.css">
 
-    @extends('User.layouts.app')
+@extends('User.layouts.app')
 @section('content')
 @foreach ( $errors->all() as $error )
     <div class="alert alert-danger" role="alert">

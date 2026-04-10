@@ -28,7 +28,7 @@
                 </ul>
                 <span> Quantity({{ $product->quantity }})</span>
               </div>
-              <form action="{{ route('user.cart.add') }}" method="POST">
+              <form action="{{ route('user.addToCart', $product->id) }}" method="POST">
                 @csrf
                 <input type="hidden" name="product_id" value="{{ $product->id }}">
                 <button type="submit" class="btn btn-primary">{{ __('user_message.Add To Cart') }}</button>
