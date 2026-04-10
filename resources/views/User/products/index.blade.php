@@ -29,7 +29,7 @@
         <td>{{$product->desc}}</td>
         <td><img src="{{asset("storage/$product->image")}}"  width="200px" alt="" srcset=""></td>
         <td>
-            <form action="{{ route('user.addToCart',$wishlist->product->id) }}" method="POST">
+            <form action="{{ route('user.addToCart',$product->id) }}" method="POST">
                 @csrf
                 <button class="round-black-btn small-btn"> Add To Cart </button>
             </form>

@@ -15,7 +15,6 @@ Route::middleware([
     'auth:sanctum',
     'change_lang',
     config('jetstream.auth_session'),
-    'verified',
 ])->group(function () {
     // Route::get('/dashboard', function () {
     //     return view('dashboard');
@@ -77,3 +76,4 @@ Route::middleware('auth', 'change_lang')->group(function(){
     });
 
 });
+

@@ -37,11 +37,12 @@
                 <hr class="mb-4" style="background-color: #e0e0e0; opacity: 1;">
               </div>
             </div>
-            @endforeach
 
             <div class="d-flex justify-content-between">
               <p class="text-muted mb-0"> {{ $item->created_at }} </p>
             </div>
+                        @endforeach
+
 
           </div>
         </div>
