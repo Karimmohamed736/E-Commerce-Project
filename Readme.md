@@ -84,7 +84,7 @@ Authorization: Bearer YOUR_TOKEN
 ![Error2](assets/images/Error2.png)
 
 
-### 👤 User Interface
+### 👤 User Dashboard
 ![User](assets/images/User_Dashboard.png)
 
 
