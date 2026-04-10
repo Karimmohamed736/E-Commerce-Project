@@ -29,14 +29,10 @@
         <td>{{$product->desc}}</td>
         <td><img src="{{asset("storage/$product->image")}}"  width="200px" alt="" srcset=""></td>
         <td>
-            {{-- <form action="{{route('admin.products.delete',$product->id)}}" method="post">
+            <form action="{{ route('user.addToCart',$wishlist->product->id) }}" method="POST">
                 @csrf
-                @method('DELETE')
-                <button type="submit" class="btn btn-danger"> Delete </button>
+                <button class="round-black-btn small-btn"> Add To Cart </button>
             </form>
-            <h1>
-                <a class="btn btn-success" href="{{route('admin.products.editForm', $product->id)}}" >edit</a>
-            </h1> --}}
         </td>
     </tr>
     @endforeach

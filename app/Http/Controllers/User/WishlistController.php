@@ -12,12 +12,12 @@ class WishlistController extends Controller
     public function index()
     {
         $wishlists = Wishlist::where('user_id', Auth::id())->with('product')->get();
-        return view('User.wishlist.index', compact('wishlists'));
+        return view('User.wishlist.wishlist', compact('wishlists'));
     }
 
     public function create(Request $request, $productId)
     {
-        $exist = Wishlist::where('user_id', Auth::id())->where('product_id', $productId)->first();
+        $exist = Wishlist::where('user_id', Auth::id())->where('product_id', $productId)->exists();
         if ($exist) {
             return redirect()->back()->with('error', 'Product is already in your wishlist.');
         }

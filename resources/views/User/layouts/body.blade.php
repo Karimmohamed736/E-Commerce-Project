@@ -33,6 +33,13 @@
                 <input type="hidden" name="product_id" value="{{ $product->id }}">
                 <button type="submit" class="btn btn-primary">{{ __('user_message.Add To Cart') }}</button>
               </form>
+
+            <form action="{{ route('user.wishlist.create', $product->id) }}" method="POST">
+                @csrf
+                <input type="hidden" name="product_id" value="{{ $product->id }}">
+                <button type="submit" class="btn btn-secondary">{{ __('user_message.Add To Wishlist') }}</button>
+            </form>
+
             </div>
           </div>
            @empty

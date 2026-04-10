@@ -79,6 +79,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('user.orders.all') }}">{{ __('user_message.Orders') }}</a>
               </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{{ route('user.wishlist') }}">{{ __('user_message.Wishlist') }}</a>
+              </li>
             </ul>
           </div>
         </div>

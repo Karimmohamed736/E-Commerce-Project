@@ -17,6 +17,8 @@ return [
     'Cart'=>'السلة',
     'Add To Cart'=>'اضف الي السلة',
     'Orders'=>'الطلبات',
+    'Wishlist'=>'المفضلات',
+    'Add To Wishlist'=>'اضف الي المفضلات',
 
 
 ];

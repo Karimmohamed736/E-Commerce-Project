@@ -15,5 +15,7 @@ return [
     'Register'=>'Register',
     'Cart'=>'Cart',
     'Add To Cart'=>'Add To Cart',
-    'Orders'=>'Orders'
+    'Orders'=>'Orders',
+    'Wishlist'=>'Wishlist',
+    'Add To Wishlist'=>'Add To Wishlist',
 ];
