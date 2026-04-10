@@ -21,7 +21,7 @@ The system leverages Laravel Jetstream for authentication scaffolding, combined 
 To ensure clean and maintainable code, Form Request classes are used for validation, while API Resources provide structured and consistent API responses.
 
 
-### ✨ Highlights (Why this project stands out)
+## ✨ Highlights (Why this project stands out)
 
 🔐 Secure Authentication using Jetstream + Sanctum (Token-Based)
 🧱 Clean Architecture with separation of concerns (Controllers, Requests, Resources)
@@ -31,7 +31,7 @@ To ensure clean and maintainable code, Form Request classes are used for validat
 🌍 Localization دعم تعدد اللغات
 ♻️ Reusable & Maintainable Code Structure
 
-### 🧩 Core Modules
+## 🧩 Core Modules
 
 🛍️ Product Management (CRUD)
 🛒 Shopping Cart System
@@ -40,7 +40,7 @@ To ensure clean and maintainable code, Form Request classes are used for validat
 🔐 Authentication & Authorization
 🔗 API Endpoints (Sanctum Protected)
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 Layer	Technology
 Backend	Laravel (MVC)
@@ -68,7 +68,7 @@ POST /api/auth/logout
 🔑 Headers
 Authorization: Bearer YOUR_TOKEN
 
-### 📸 Screenshots
+## 📸 Screenshots
 
 ## 🔐 API (Postman)
 ![API_Register](assets/images/Register.png)
@@ -105,7 +105,7 @@ Authorization: Bearer YOUR_TOKEN
 ### 🌍 Multi-language Support (Localization)
 ![Arabic](assets/images/Arabic_Lang.png)
 
-### 🧠 What I Learned
+## 🧠 What I Learned
 
 Designing scalable backend systems
 Building secure APIs باستخدام Token Authentication
@@ -114,10 +114,10 @@ Working with real-world features (Cart, Orders, Wishlist)
 Improving code quality باستخدام Requests & Resources
 
 
-### 👨‍💻 Author
+## 👨‍💻 Author
 
 Karim Mohamed
 
-### ⭐ Final Note
+## ⭐ Final Note
 
 This project reflects my ability to build real-world Laravel applications with clean, maintainable code and modern development practices.
