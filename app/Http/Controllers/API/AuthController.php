@@ -4,9 +4,11 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginRequest;
+use App\Mail\WelcomeMail;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
@@ -39,7 +41,10 @@ class AuthController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => $password,
+            'email_verified at'=>now(),
         ]);
+
+        $user->markEmailAsVerified();
 
         //create Token
         $access_token = $user->createToken('ApiToken')->plainTextToken;

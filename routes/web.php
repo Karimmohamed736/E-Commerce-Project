@@ -5,6 +5,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\User\OrderController;
 use App\Http\Controllers\User\ProductController as UserProductController;
 use App\Http\Controllers\User\WishlistController;
+use App\Mail\WelcomeMail;
+use App\Models\User;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,6 +18,7 @@ Route::middleware([
     'auth:sanctum',
     'change_lang',
     config('jetstream.auth_session'),
+    'verified',
 ])->group(function () {
     // Route::get('/dashboard', function () {
     //     return view('dashboard');
@@ -76,4 +80,11 @@ Route::middleware('auth', 'change_lang')->group(function(){
     });
 
 });
+
+// Route::get('test-mail',function(){
+//     $user = User::first();
+//     Mail::to('test@test.com')->send(new WelcomeMail($user));
+//     return "MAil sent";
+// });
+
 

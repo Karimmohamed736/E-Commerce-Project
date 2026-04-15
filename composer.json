@@ -11,7 +11,8 @@
         "laravel/jetstream": "^5.5",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.10.1",
-        "livewire/livewire": "^4.2"
+        "livewire/livewire": "^4.2",
+        "vonage/client": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
