@@ -77,16 +77,18 @@ class ProductController extends Controller
         tags: ["Products"],
         requestBody: new OA\RequestBody(
             required: true,
-            content: new OA\JsonContent(
+            content: new OA\MediaType(
+                mediaType:"multipart/form-data",
+                schema: new OA\Schema(
                 required: ["name", "price", "desc", "quantity", "image"],
                 properties: [
                     new OA\Property(property: "name", type: "string", example: "Laptop"),
-                    new OA\Property(property: "description", type: "string", example: "Dell laptop"),
                     new OA\Property(property: "price", type: "number", format: "float", example: 25000),
                     new OA\Property(property: "desc", type: "string", example: "Dell laptop description"),
                     new OA\Property(property: "quantity", type: "integer", example: 5),
-                    new OA\Property(property: "image", type: "string", example: "product.jpg"),
+                    new OA\Property(property: "image", type: "string", format: "binary", example: "product.jpg"),
                 ]
+            )
             )
         ),
         responses: [
@@ -143,15 +145,17 @@ class ProductController extends Controller
         ],
         requestBody: new OA\RequestBody(
             required: true,
-            content: new OA\JsonContent(
+            content: new OA\MediaType(
+                mediaType:"multipart/form-data",
+                schema: new OA\Schema(
                 properties: [
                     new OA\Property(property: "name", type: "string", example: "Updated Laptop"),
-                    new OA\Property(property: "description", type: "string", example: "Updated description"),
                     new OA\Property(property: "price", type: "number", format: "float", example: 30000),
                     new OA\Property(property: "desc", type: "string", example: "Updated description"),
                     new OA\Property(property: "quantity", type: "integer", example: 8),
-                    new OA\Property(property: "image", type: "string", example: "updated_product.jpg"),
+                    new OA\Property(property: "image", type: "string", format: "binary", example: "updated_product.jpg"),
                 ]
+            )
             )
         ),
         responses: [

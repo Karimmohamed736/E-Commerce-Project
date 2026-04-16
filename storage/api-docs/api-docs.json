@@ -34,30 +34,37 @@
                 "requestBody": {
                     "required": true,
                     "content": {
-                        "application/json": {
+                        "multipart/form-data": {
                             "schema": {
                                 "required": [
                                     "name",
                                     "price",
-                                    "stock"
+                                    "desc",
+                                    "quantity",
+                                    "image"
                                 ],
                                 "properties": {
                                     "name": {
                                         "type": "string",
                                         "example": "Laptop"
                                     },
-                                    "description": {
-                                        "type": "string",
-                                        "example": "Dell laptop"
-                                    },
                                     "price": {
                                         "type": "number",
                                         "format": "float",
                                         "example": 25000
                                     },
-                                    "stock": {
+                                    "desc": {
+                                        "type": "string",
+                                        "example": "Dell laptop description"
+                                    },
+                                    "quantity": {
                                         "type": "integer",
                                         "example": 5
+                                    },
+                                    "image": {
+                                        "type": "string",
+                                        "format": "binary",
+                                        "example": "product.jpg"
                                     }
                                 },
                                 "type": "object"
@@ -124,25 +131,30 @@
                 "requestBody": {
                     "required": true,
                     "content": {
-                        "application/json": {
+                        "multipart/form-data": {
                             "schema": {
                                 "properties": {
                                     "name": {
                                         "type": "string",
                                         "example": "Updated Laptop"
                                     },
-                                    "description": {
-                                        "type": "string",
-                                        "example": "Updated description"
-                                    },
                                     "price": {
                                         "type": "number",
                                         "format": "float",
                                         "example": 30000
                                     },
-                                    "stock": {
+                                    "desc": {
+                                        "type": "string",
+                                        "example": "Updated description"
+                                    },
+                                    "quantity": {
                                         "type": "integer",
                                         "example": 8
+                                    },
+                                    "image": {
+                                        "type": "string",
+                                        "format": "binary",
+                                        "example": "updated_product.jpg"
                                     }
                                 },
                                 "type": "object"
