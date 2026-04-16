@@ -76,6 +76,8 @@ To ensure clean and maintainable code, Form Request classes are used for validat
 ![API_AllProducts](assets/images/All.png)
 ![API_Logout](assets/images/Logout.png)
 
+## 🔐 OpenAPI (Swagger)
+![OpenAPI](assets/images/OpenAPI.png)
 
 ### ➕ Add Product
 ![Add](assets/images/Add.png)
