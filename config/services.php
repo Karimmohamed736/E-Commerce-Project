@@ -34,5 +34,9 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'vonage' => [
+        'key'    => env('VONAGE_API_KEY'),
+        'secret' => env('VONAGE_API_SECRET'),
+    ],
 
 ];

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\API\ProductController;
+use App\Http\Controllers\SmsController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,3 +27,6 @@ Route::controller(AuthController::class)->group(function(){
     Route::delete('logout','logout')->middleware('auth:sanctum');
 
 });
+
+Route::get('send-sms', [SmsController::class, 'send'])->name('send.sms');
+

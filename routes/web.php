@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SmsController;
 use App\Http\Controllers\User\OrderController;
 use App\Http\Controllers\User\ProductController as UserProductController;
 use App\Http\Controllers\User\WishlistController;
@@ -86,5 +87,6 @@ Route::middleware('auth', 'change_lang')->group(function(){
 //     Mail::to('test@test.com')->send(new WelcomeMail($user));
 //     return "MAil sent";
 // });
+
 
 
