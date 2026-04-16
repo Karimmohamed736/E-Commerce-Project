@@ -30,3 +30,5 @@ Route::controller(AuthController::class)->group(function(){
 
 Route::get('send-sms', [SmsController::class, 'send'])->name('send.sms');
 
+Route::apiResource('products', ProductController::class);
+
