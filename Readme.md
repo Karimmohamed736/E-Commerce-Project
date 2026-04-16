@@ -23,31 +23,31 @@ To ensure clean and maintainable code, Form Request classes are used for validat
 
 ## ✨ Highlights (Why this project stands out)
 
-🔐 Secure Authentication using Jetstream + Sanctum (Token-Based)
-🧱 Clean Architecture with separation of concerns (Controllers, Requests, Resources)
-🔗 RESTful API Design with structured responses using API Resources
-⚡ Dynamic UI built with Livewire (no heavy JS frameworks)
-🛡️ Robust Validation using Form Request classes
-🌍 Localization دعم تعدد اللغات
-♻️ Reusable & Maintainable Code Structure
+- 🔐 Secure Authentication using Jetstream + Sanctum (Token-Based)
+- 🧱 Clean Architecture with separation of concerns (Controllers, Requests, Resources)
+- 🔗 RESTful API Design with structured responses using API Resources
+- ⚡ Dynamic UI built with Livewire (no heavy JS frameworks)
+- 🛡️ Robust Validation using Form Request classes
+- 🌍 Localization دعم تعدد اللغات
+- ♻️ Reusable & Maintainable Code Structure
 
 ## 🧩 Core Modules
 
-🛍️ Product Management (CRUD)
-🛒 Shopping Cart System
-❤️ Wishlist Feature
-📦 Order Management System
-🔐 Authentication & Authorization
-🔗 API Endpoints (Sanctum Protected)
+- 🛍️ Product Management (CRUD)
+- 🛒 Shopping Cart System
+- ❤️ Wishlist Feature
+- 📦 Order Management System
+- 🔐 Authentication & Authorization
+- 🔗 API Endpoints (Sanctum Protected)
 
 ## 🛠️ Tech Stack
 
-Layer	Technology
-Backend	Laravel (MVC)
-Frontend	Livewire
-Auth	Jetstream + Sanctum
-Database	MySQL
-API	RESTful
+- Layer	Technology
+- Backend	 Laravel (MVC)
+- Frontend	 Livewire
+- Auth	 Jetstream + Sanctum
+- Database	 MySQL
+- API	RESTful
 
 
 ## ▶️ How to Run
@@ -62,11 +62,11 @@ API	RESTful
 ### 📬 API (Postman)
 
 🔐 Auth
-POST /api/auth/register
-POST /api/auth/login
-POST /api/auth/logout
+- POST /api/auth/register
+- POST /api/auth/login
+- POST /api/auth/logout
 🔑 Headers
-Authorization: Bearer YOUR_TOKEN
+- Authorization: Bearer YOUR_TOKEN
 
 ## 📸 Screenshots
 
@@ -84,7 +84,7 @@ Authorization: Bearer YOUR_TOKEN
 ![Update](assets/images/Update.png)
 
 ### ❌ Error Message
-![ErrorAPI](assets/images/Error_Api.png)
+[ErrorAPI](assets/images/Error_Api.png)
 ![Error1](assets/images/Error1.png)
 ![Error2](assets/images/Error2.png)
 
@@ -107,11 +107,11 @@ Authorization: Bearer YOUR_TOKEN
 
 ## 🧠 What I Learned
 
-Designing scalable backend systems
-Building secure APIs باستخدام Token Authentication
-Structuring Laravel projects using best practices
-Working with real-world features (Cart, Orders, Wishlist)
-Improving code quality باستخدام Requests & Resources
+- Designing scalable backend systems
+- Building secure APIs باستخدام Token Authentication
+- Structuring Laravel projects using best practices
+- Working with real-world features (Cart, Orders, Wishlist)
+- Improving code quality باستخدام Requests & Resources
 
 
 ## 👨‍💻 Author
