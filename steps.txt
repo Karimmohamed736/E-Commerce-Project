@@ -1,0 +1,51 @@
+1- Verify DB in env
+2- migrate database (skip it for later if you will install package)
+3- install package Jetstream with livewire
+4- install npm
+5- re-run migrate DB because of new package (has new tables)
+6- add role column to user table for admin and user
+7- make controller to view dashboard for admin and other to user
+8- use template sixteen-clothes to user side and get asset folder for public folder in project
+9- change all assets into asset() of blade
+10- divide the Layouts and remove rows
+11- edit in links like login and home route
+12- Make Product -mc for admin and user then migrate
+13- Make seeder if you want
+14- CRUD with Image
+
+15- Make middleware for admin (is_admin) and make function to be role admin only then verify it in app in bootstrap and call it in routes
+
+
+//API
+1- Make controller for api and manage all CRUD
+2- Make Resource to manage the response of API in postman
+3- Call URi in postman
+
+
+//Auth (with access Token)
+1- Make controller for Auth that has (Register, Login, Logout) and make routes
+2- make Token in register and login(after delete old one) and delete tokens in logout
+3- In postman after login and send you token, take this token to logout uri and in authentication put it in Bearer token
+
+//Localization
+1- In terminal, Make publish lang to create folder lang
+2- make 2 folders ar and en that have same file message with same words to translate
+3- Make route with function parameter to check on en or ar by session
+4- Make middleware ChangeLang to change locale to ar or en
+5- after verify the middleware, Put it in the route of the page
+6-Go to every word in pages and put them between
+{{(‘message.   ‘)}}
+
+
+//User side
+1- Divide all pages into Layouts
+2- pagination and verify it in AppServerProvidor and loop for Products
+
+//cart and orders and wishlist
+
+
+//SMS
+//OpenAPI
+
+
+
